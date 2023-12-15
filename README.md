@@ -1,1 +1,4 @@
 # BIRCO
+
+## Paper abstract
+We present the **B**enchmark of **IR** tasks with **C**omplex **O**bjectives (BIRCO) to evaluate the ability of Information Retrieval (IR) models to follow multi-faceted task objectives. We study the performance of various embedding, distilled and fine-tuned IR models on BIRCO, and find them lacking. We provide a unified framework for investigating the performance of large language models (LLMs) on these tasks. The proposed framework consists of 3 modular components: task-objective awareness; chain-of-thought reasoning; and task decomposition. We investigate the effects of these factors on LLM performance, and identify a simple baseline model which matches or outperforms existing approaches and more complex alternatives. No approach achieves satisfactory performance on all benchmark tasks, suggesting that stronger models and new retrieval protocols are necessary to address complex user needs. 
