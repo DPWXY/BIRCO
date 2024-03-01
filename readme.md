@@ -76,3 +76,6 @@ We provide brief information about test sets for five datasets in BIRCO here. Th
 We provide rank results of all methods reported in our paper in `evaluation/ranks/`.
 
 To reproduce the experimental results from scratch, go to `experiments/`. The details to reproduce the ranks are provided [here](https://github.com/BIRCO-benchmark/BIRCO/blob/main/experiments/readme.md). 
+
+## Knowledge Contamination
+The scanned images of human annotations across ten datasets from BEIR are avaliable [here](https://zenodo.org/records/10738479). 
