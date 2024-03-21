@@ -1,5 +1,8 @@
 # BIRCO: A Benchmark of Information Retrieval Tasks with Complex Objectives
 
+Our dataset is freely and publicly available at [zenodo](https://zenodo.org/records/10850865).
+
+All human annotations are also available at [zenodo](https://zenodo.org/records/10738479).
 
 ## Paper abstract
 We present the **B**enchmark of **I**nformation **R**etrieval (IR) tasks with **C**omplex **O**bjectives (BIRCO). BIRCO evaluates the ability of IR systems to retrieve documents given multi-faceted user objectives. The benchmark's complexity and compact size make it suitable for evaluating large language model (LLM)-based information retrieval systems. We present a modular framework for investigating factors that may influence LLM performance on retrieval tasks, and identify a simple baseline model which matches or outperforms existing approaches and more complex alternatives. No approach achieves satisfactory performance on all benchmark tasks, suggesting that stronger models and new retrieval protocols are necessary to address complex user needs. 
