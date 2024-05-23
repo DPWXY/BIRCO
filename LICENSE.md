@@ -2,7 +2,7 @@ License for Codebase:
 
 MIT License
 
-Copyright (c) 2023 Real-Doris-Mae
+Copyright (c) 2023 BIRCO
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
