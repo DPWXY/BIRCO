@@ -1,11 +1,38 @@
 # BIRCO: A Benchmark of Information Retrieval Tasks with Complex Objectives
 
+[![arXiv](https://img.shields.io/badge/arXiv-2402.14151-<COLOR>.svg)](https://arxiv.org/abs/2402.14151)&nbsp;
+
 Our dataset is freely and publicly available at [zenodo](https://zenodo.org/records/10850865).
 
 All human annotations are also available at [zenodo](https://zenodo.org/records/10738479).
 
 ## Paper abstract
 We present the **B**enchmark of **I**nformation **R**etrieval (IR) tasks with **C**omplex **O**bjectives (BIRCO). BIRCO evaluates the ability of IR systems to retrieve documents given multi-faceted user objectives. The benchmark's complexity and compact size make it suitable for evaluating large language model (LLM)-based information retrieval systems. We present a modular framework for investigating factors that may influence LLM performance on retrieval tasks, and identify a simple baseline model which matches or outperforms existing approaches and more complex alternatives. No approach achieves satisfactory performance on all benchmark tasks, suggesting that stronger models and new retrieval protocols are necessary to address complex user needs. 
+
+## Complex Task Objectives
+
+We provide a reference version of each of the task objective in Appendix B1-B5 of our paper. All of our evaluated LLMs and embedding models have access to these task objectives (i.e. instructions), whenever there is +O notation. In order to evaluate your own model, you can refer to these task objectives so that your model have access to proper task instruction, since each task objective is complex and goes beyond traditional semantic relevance. We reproduce each task objective here.
+
+### DORIS-MAE:
+
+The query consists of users’ needs, leading to several research questions that span a paragraph. Each candidate passage is an abstract from a scientific paper. The objective of this information retrieval task is to identify the abstract that most effectively meets the user's needs in the query.
+
+### ArguAna:
+
+This information retrieval (IR) task has a debate format where a topic is given, and two directly opposing sides of arguments about this topic are formed.  A query is an argument that takes one side of this topic, focuses on a particular point about this topic, and takes a stance (i.e., opinion, position, view, perspective) about this particular point. A passage is an argument that takes the opposing side of the same topic, focuses on the same particular point about the same topic, and takes a directly opposing stance that directly (i.e., no implying or inferring) refutes and attacks the query’s stance regarding this particular point. Both query and passage might have citations in them but these citations should not be considered in the scope of this task. The overall goal of this specific information retrieval IR task is to identify the central topic of the debate, to articulate the query’s stance, and to find the passage that takes the opposing stance.
+
+### WhatsThatBook:
+
+The query has this format: a user is trying to remember the name of a specific book. The user only remembers some details about the book, such as places, events, and some characters’ names. Some of the details are described using informal language. The passage is a book description or summary of a specific book. The passage typically describes the overall storyline of the book and contains some details about the book. The objective of this information retrieval IR task is for you to find the passage that has details or components that holistically best match, explicitly or implicitly, the details or components raised in the query. In other words, you need to find the book description (i.e., the passage) that is most likely the book the user is looking for in the query.
+
+### RELIC:
+
+The query is a piece of literary analysis written by a scholar. In the query (i.e., the excerpt from a literary analysis), one or more quotations from a classic English novel is used as evidence to support the claims made by the literary analysis. Quotations are identified by quotation marks. Now, one quotation is being intentionally masked from the literary analysis (i.e., the query), and replaced by the symbol [masked sentence(s)]. An important claim is made in the preceding context and another important point is made in the subsequent context surrounding the [masked sentence(s)]. The objective of this information retrieval task is to find the most suitable passage that can be used to directly support at least one claim made in the query (i.e., the claim that is made in the preceding or the claim subsequent context surrounding the [masked sentence(s)]) and is very natural to be plugged into the [masked sentence(s)] part of the query. Obviously the most suitable passage should NOT REPEAT or be contained in any part of the query. It does not make sense to repeat the same or very similar things twice in literary analysis.
+
+### Clinical-Trial:
+
+The motivation of the Information Retrieval task is that clinical trials are experiments conducted in the development of new medical treatments, drugs or devices, and recruiting candidates for a trial is often a time-consuming and resource-intensive effort. A query is a patient case report (either in the form of electronic patient records or ad-hoc queries). A passage is a clinical trial. This Information Retrieval task is to improve patient recruitment for clinical trials. The overall goal of this specific information retrieval IR task is to match eligible patients (the query) to clinical trials (the passage) for recruitment.
+
 
 
 ## Setup
