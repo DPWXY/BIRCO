@@ -71,7 +71,7 @@ To assess the performance of your model, you should organize the ranking results
 }
 ```
 
-In this format, `cid_1_from_qid_1_candidate_pool`, `cid_2_from_qid_1_candidate_pool`, and so on, represent the IDs of the candidate documents in the candidate pool associated with the first query. These IDs come from the qrel dict associated with your dataset ([detail of the dataset](https://github.com/BIRCO-benchmark/BIRCO/blob/main/datasets/readme.md)). The candidates should be listed in order of decreasing relevance; meaning, the first ID in each list is considered the most relevant document to the query among all candidates in the pool.
+In this format, `cid_1_from_qid_1_candidate_pool`, `cid_2_from_qid_1_candidate_pool`, and so on, represent the IDs of the candidate documents in the candidate pool associated with the first query. These IDs come from the qrel dict associated with your dataset ([detail of the dataset](https://github.com/DPWXY/BIRCO/blob/main/datasets/readme.md)). The candidates should be listed in order of decreasing relevance; meaning, the first ID in each list is considered the most relevant document to the query among all candidates in the pool.
 
 Please note, for each query, the entirety of its candidate pool needs to be ranked. Also note, different query can have different candidate pool of different size.
 
@@ -88,7 +88,7 @@ The result metrics will be printed.
 
 The datasets with test and dev sets are in `datasets/`. 
 
-We provide brief information about test sets for five datasets in BIRCO here. The detailed information about the dataset is available [here](https://github.com/BIRCO-benchmark/BIRCO/blob/main/datasets/readme.md).
+We provide brief information about test sets for five datasets in BIRCO here. The detailed information about the dataset is available [here](https://github.com/DPWXY/BIRCO/blob/main/datasets/readme.md).
 1. **DORIS-MAE**:
 60 queries that are complex research questions from computer scientists. The query communicates specific requirements from research papers. Each query has a candidate pool sized approximately 110.
 2. **ArguAna**:
@@ -105,7 +105,7 @@ We provide brief information about test sets for five datasets in BIRCO here. Th
 
 We provide rank results of all methods reported in our paper in `evaluation/ranks/`.
 
-To reproduce the experimental results from scratch, go to `experiments/`. The details to reproduce the ranks are provided [here](https://github.com/BIRCO-benchmark/BIRCO/blob/main/experiments/readme.md). 
+To reproduce the experimental results from scratch, go to `experiments/`. The details to reproduce the ranks are provided [here](https://github.com/DPWXY/BIRCO/blob/main/experiments/readme.md). 
 
 ## Knowledge Contamination
 The scanned images of human annotations across ten datasets from BEIR are avaliable [here](https://zenodo.org/records/10738479). 
